@@ -1,0 +1,2 @@
+Add-Type -Path "C:\Program Files\PackageManagement\NuGet\Packages\MimeKit.4.7.1\lib\netstandard2.0\MimeKit.dll"
+Add-Type -Path "C:\Program Files\PackageManagement\NuGet\Packages\MailKit.4.7.1.1\lib\netstandard2.0\MailKit.dll"

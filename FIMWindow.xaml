@@ -1,0 +1,56 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FIM_Gui"
+        xmlns:Accessibility="clr-namespace:Accessibility;assembly=Accessibility" 
+        mc:Ignorable="d"
+        Title="FIM System" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF244616"/>
+            <GradientStop Color="White"/>
+            <GradientStop Color="#FF575757"/>
+            <GradientStop Color="#FFE0E0E0"/>
+            <GradientStop Color="#FFF2F2F2"/>
+            <GradientStop Color="#FFF4F4F4"/>
+            <GradientStop Color="#FFEBEBEB"/>
+            <GradientStop Color="#FFC4C4C4" Offset="0.014"/>
+            <GradientStop Color="#FF868686" Offset="0.359"/>
+            <GradientStop Color="#FF4A4A4A"/>
+            <GradientStop Color="#FF151515"/>
+            <GradientStop Color="#FF959595" Offset="0.397"/>
+            <GradientStop Color="#FFB0B0B0" Offset="0.453"/>
+            <GradientStop Color="#FFD5D5D5"/>
+            <GradientStop Color="#FFE3E3E3"/>
+            <GradientStop Color="#FFE8E8E8"/>
+            <GradientStop Color="#FFD4D4D4"/>
+            <GradientStop Color="#FFA3A3A3" Offset="0.427"/>
+            <GradientStop Color="#FF090909"/>
+            <GradientStop Color="#FF4A4A4A" Offset="0.944"/>
+            <GradientStop Color="#FF757575" Offset="0.312"/>
+            <GradientStop Color="#FF645A5F"/>
+            <GradientStop Color="#FF523240"/>
+            <GradientStop Color="#FF593F4B"/>
+            <GradientStop Color="#FFFDFDFD"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Cursor="Hand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.DataContext>
+            <Accessibility:__MIDL_IWinTypes_0009/>
+        </Grid.DataContext>
+        <Button x:Name="LoadBaseLine" Content="LoadBaseLine" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="613,82,0,0" VerticalAlignment="Top" Height="30" Width="106" Background="#FFF31010" FontWeight="Bold" RenderTransformOrigin="0.488,1.001" />
+        <Label x:Name="Selectbaseline" Content="Selectbaseline:" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="25,63,0,0" VerticalAlignment="Top" Height="30" Width="136" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Selectbaseline_space" Content="" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="161,67,0,0" VerticalAlignment="Top" Height="30" Width="374" Background="#FFCFC6C6"/>
+        <ListBox x:Name="listspath" Grid.ColumnSpan="2" Margin="41,121,217,59" Background="#FFDFDCDC"/>
+        <Button x:Name="Addfile" Content="Addfile" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="613,152,0,0" VerticalAlignment="Top" Height="30" Width="106" Background="#FFF31010" FontWeight="Bold" RenderTransformOrigin="0.458,0.956"/>
+        <Button x:Name="CreateBaseline" Content="Create Baseline" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="613,186,0,0" VerticalAlignment="Top" Height="30" Width="106" Background="#FFF31010" RenderTransformOrigin="0.519,5.207" FontWeight="Bold"/>
+        <Button x:Name="Verifybaseline" Content="Verifybaseline" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="613,117,0,0" VerticalAlignment="Top" Height="30" Width="106" Background="#FFF31010" FontWeight="Bold" RenderTransformOrigin="0.458,0.956"/>
+
+    </Grid>
+</Window>
